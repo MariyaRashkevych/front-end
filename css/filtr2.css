@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+@font-face {
+    font-family:'Wandering Pencil';
+    src: url('../fonts/wandering_pencil-webfont.woff') format('woff'),
+         url('../fonts/wandering_pencil-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'Wandering Pencil',serif;
+    font-weight: normal;
+    font-style: normal;
+    color: green;
+    background: #e5e6fa no-repeat center top;
+    padding-top:94px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 74px;
+  }
+.item{
+    border: 10px solid white;
+    height:200px;
+    width: 200px;
+    margin: 10px;
+    background-color:white;
+    position: relative;
+   overflow: hidden;
+   cursor:pointer;
+}
+.item img{
+    width: 100%;
+    display: block;
+}
+.blur{
+    height:0px;
+    width: 200px;
+    position: absolute;
+    top:0;
+    text-align: center;
+    filter:blur(2px);
+}
+.grayscale {
+    height:0px;
+    width: 200px;
+    position: absolute;
+    top:0;
+    text-align: center;
+    filter:grayscale(100%);
+
+}
+.brightness{
+    height:0px;
+    width: 200px;
+    position: absolute;
+    top:0;
+    text-align: center;
+    filter:brightness(0.5);
+}
+.saturate {
+    height:0px;
+    width: 200px;
+    position: absolute;
+    top:0;
+    text-align: center;
+    filter:saturate(4);
+}
+.huerotate {
+    height:0px;
+    width: 200px;
+    position: absolute;
+    top:0;
+    text-align: center;
+    filter:hue-rotate(180deg);
+}  
+.contrast {
+    height:0px;
+    width: 200px;
+    position: absolute;
+    top:0;
+    text-align: center;
+    filter:contrast(150%);
+}
+.opacity {
+    height:0px;
+    width: 200px;
+    position: absolute;
+    top:0;
+    text-align: center;
+    filter:opacity(50%);
+} 
+.sepia {
+    height:0px;
+    width: 200px;
+    position: absolute;
+    top:0;
+    text-align: center;
+    filter:sepia(100%);
+}
+.invert {
+    height:0px;
+    width: 200px;
+    position: absolute;
+    top:0;
+    text-align: center;
+    filter:invert(100%);
+
+} 
+.shadow {
+    height:0px;
+    width: 200px;
+    position: absolute;
+    top:0;
+    text-align: center;
+    filter: drop-shadow(10px 10px 1px #000);
+} 
+div:hover {
+    filter: none;
+} 
+.title{
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 65px;
+}
